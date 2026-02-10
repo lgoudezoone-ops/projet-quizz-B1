@@ -2,10 +2,40 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Leane</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="conteneur">
+        <div id="ecran-daccueil" class="ecran">
+            <h1>Bienvenue sur le Quiz de Leane !</h1>
+            <p>10 questions • Teste tes connaissances</p>
+            <button id="btn-demarrer">Commencer le Quiz</button>
+        </div>
+        <div id="ecran-question" class="ecran cache">
+            <div class="progression">
+                <span id="questionnombre">question 1/10</span>
+                <div class="progression-bar">
+                    <div id="progression-bar-fill"></div>
+                </div>
+            </div>
+            <h2 id="texte-question"></h2>
+            <div id="reponses" class="reponses">
+                <button class="reponsebtn"> 1</button>
+                <button class="reponsebtn"> 2</button>
+                <button class="reponsebtn"> 3</button>
+                <button class="reponsebtn"> 4</button>
+            </div>
+            <p id="retour"></p>
+    </div>
+    <div id="ecran-resultat" class="ecran cache">
+        <h2>🎉 Résultat</h2>
+        <p id="texte-score"></p>
+        <p id="appreciation"></p>
+        <h3>Corrections :</h3>
+        <ul id="liste-corrections"></ul>
+        <button id="restart-btn">Recommencer le Quiz</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
